@@ -1,4 +1,5 @@
-Instapapure
+clj-instapaper
 ===========
 
-Instapaper + Clojure = Instapapure
+Clojure implementation of the Instapaper Simple Developer API.
+

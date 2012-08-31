@@ -1,5 +1,5 @@
-(ns Instapapure.test.core
-  (:use [Instapapure.core])
+(ns clj-instapaper.test.core
+  (:use [clj-instapaper.core])
   (:use [midje.sweet])
   (:require [clj-http.client])
   (:use clj-http.fake))

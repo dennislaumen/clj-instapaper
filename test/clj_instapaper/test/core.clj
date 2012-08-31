@@ -9,4 +9,5 @@
   }
                   
   (fact 
-    (auth "marco" "arment") => (contains {:status 200})))
+    (authenticate "marco" "arment") => (contains {:status 200})))
+

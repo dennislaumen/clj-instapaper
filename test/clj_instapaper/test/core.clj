@@ -20,7 +20,7 @@
 
   (fact "Authentication"
     (authenticate "Marco" "Arment") => true
-    (authenticate "Nate" "Weiner") => (throws "Invalid username or password.")
+    (authenticate "Nate" "Weiner") => false 
     (authenticate "Rich" "Ziade") => (throws "The service encountered an error. Please try again later.")
     (authenticate "Tim" "Cook") => throws))
 

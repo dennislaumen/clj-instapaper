@@ -7,7 +7,6 @@
   (let [http-response (c/post "https://www.instapaper.com/api/authenticate" {:basic-auth [username password] :throw-exceptions false})]
     (case (http-response :status)
       200 true
-      403 false 
-      500 (throw (new Exception "The service encountered an error. Please try again later."))
-      throw (new Exception (str "Unexpected HTTP response: " http-response)))))
+      403 false
+      throw (new Exception http-response))))
 

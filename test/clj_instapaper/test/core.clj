@@ -13,14 +13,11 @@
         (= auth-header nate-weiner)
           {:status 403 :headers {} :body "Invalid username or password."}
         (= auth-header rich-ziade)
-          {:status 500 :headers {} :body "The service encountered an error. Please try again later."}
-        :else
-          {:status 503 :headers {} :body "Service Unavailable"})))
+          {:status 500 :headers {} :body "The service encountered an error. Please try again later."})))
   }
 
-  (fact "Authentication"
+  (fact "authenticate"
     (authenticate "Marco" "Arment") => true
     (authenticate "Nate" "Weiner") => false 
-    (authenticate "Rich" "Ziade") => (throws "The service encountered an error. Please try again later.")
-    (authenticate "Tim" "Cook") => throws))
+    (authenticate "Rich" "Ziade") => throws))
 

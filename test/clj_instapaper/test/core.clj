@@ -16,7 +16,7 @@
           {:status 500 :headers {} :body "The service encountered an error. Please try again later."})))
   }
 
-  (fact "authenticate"
+  (fact "Authentication"
     (authenticate "Marco" "Arment") => true
     (authenticate "Nate" "Weiner") => false 
     (authenticate "Rich" "Ziade") => throws))

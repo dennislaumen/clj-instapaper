@@ -19,5 +19,6 @@
   (fact "Authentication"
     (authenticate "Marco" "Arment") => true
     (authenticate "Nate" "Weiner") => false 
-    (authenticate "Rich" "Ziade") => throws))
+    (authenticate "Rich" "Ziade") => throws
+    (authenticate "Marco") => true))
 

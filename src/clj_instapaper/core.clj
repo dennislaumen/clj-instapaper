@@ -13,7 +13,9 @@
   ([username]
     (authenticate username ""))
   ([username password]
-    (let [http-response (c/post "https://www.instapaper.com/api/authenticate" {:basic-auth [username password] :throw-exceptions false})]
+    (let [http-response (c/post "https://www.instapaper.com/api/authenticate" 
+                                {:basic-auth [username password] 
+                                 :throw-exceptions false})]
       (case (http-response :status)
         200 true
         403 false

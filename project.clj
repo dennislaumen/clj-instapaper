@@ -1,4 +1,4 @@
-(defproject Instapapure "1.0.0-SNAPSHOT"
+(defproject clj-instapaper "1.0.0-SNAPSHOT"
   :description "Clojure implementation of the Instapaper Simple Developer API."
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [midje "1.4.0"]

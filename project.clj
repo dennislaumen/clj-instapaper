@@ -3,5 +3,5 @@
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [midje "1.4.0"]
                  [clj-http "0.4.3"]
-                 [clj-http-fake "0.3.0"]]
+                 [clj-http-fake "0.4.1"]]
   :dev-dependencies [[lein-midje "1.0.10"]])
